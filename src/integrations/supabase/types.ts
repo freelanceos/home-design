@@ -569,6 +569,10 @@ export type Database = {
         Args: Record<PropertyKey, never>
         Returns: undefined
       }
+      create_admin_account: {
+        Args: { p_email: string; p_password: string; p_role?: string }
+        Returns: string
+      }
       get_admin_dashboard_stats: {
         Args: Record<PropertyKey, never>
         Returns: Json
